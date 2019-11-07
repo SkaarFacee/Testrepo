@@ -1,0 +1,35 @@
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+
+title: My blog
+name: My blog
+description: Welcome to my blog
+github: https://github.com/adiaux
+rss: true
+
+plugins:
+  - rouge
+  - kramdown
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
+
+exclude:
+  - script
+  - docs
+  - vendor
+  - Gemfile
+  - Gemfile.lock
