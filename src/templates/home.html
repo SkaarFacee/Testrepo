@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head_title%} Home {% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+
+<h1> User is {{ user }}</h1>
+    {% for a in my_list %}
+        <li>{{ a }}</li> 
+    {% endfor %}
+{% endif %}
+
+{% endblock %}
+
